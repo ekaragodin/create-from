@@ -12,5 +12,5 @@ if (!from || !to) {
 }
 
 mkdir(to)
-    .then(download({ from, to }))
-    .then(install({ to }));
+    .then(() => download({ from, to }))
+    .then(() => install({ to }));
